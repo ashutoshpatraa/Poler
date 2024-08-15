@@ -53,6 +53,17 @@ def getResponse(ints, intents_json):
             result = random.choice(i['responses'])
             break
     return result
+def getResponse(ints, intents_json):
+    if not ints:
+        return "I'm sorry, I didn't understand that. Can you please rephrase?"
+    
+    tag = ints[0]['intent']
+    list_of_intents = intents_json['intents']
+    for i in list_of_intents:
+        if i['tag'] == tag:
+            result = i['responses']
+            break
+    return random.choice(result)
 def chatbot_response(msg):
     ints = predict_class(msg, model)
     res = getResponse(ints, intents)
