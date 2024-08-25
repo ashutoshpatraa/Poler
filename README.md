@@ -17,8 +17,8 @@ This is a simple chatbot application built using Flask, NLTK, and Keras. The cha
 
 1. **Clone the repository:**
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone <[repository-url](https://github.com/ashutoshpatraa/Poler)>
+    cd <Poler>
     ```
 
 2. **Create a virtual environment and activate it:**
